@@ -35,8 +35,8 @@
         // Save to DB
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection conn = DriverManager.getConnection(
-            "jdbc:mysql://localhost:3306/student_report?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC",
-            "root", "karthi"
+            "jdbc:mysql://b5mkw3hz4pketjlxs9cp-mysql.services.clever-cloud.com:3306/b5mkw3hz4pketjlxs9cp",
+            "ui60qawn0wknpbuj", "tg55JuZt1E9UayFF9Js7"
         );
 
         String sql = "INSERT INTO student_results (name, roll_number, age, tamil, english, mathematics, physics, chemistry, computer_science, total_marks, percentage, grade, result, user_id) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";

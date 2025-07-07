@@ -18,9 +18,9 @@ PreparedStatement pstmt = null;
 ResultSet rs = null;
 
 try {
-    String url = "jdbc:mysql://localhost:3306/student_report?useSSL=false";
-    String dbUser = "root";
-    String dbPass = "karthi";
+    String url = "jdbc:mysql://b5mkw3hz4pketjlxs9cp-mysql.services.clever-cloud.com:3306/b5mkw3hz4pketjlxs9cp";
+    String dbUser = "ui60qawn0wknpbuj";
+    String dbPass = "tg55JuZt1E9UayFF9Js7";
 
     Class.forName("com.mysql.cj.jdbc.Driver");
     conn = DriverManager.getConnection(url, dbUser, dbPass);
@@ -43,7 +43,6 @@ try {
 
     response.sendRedirect("homepage.jsp");
 } else {
-return confirm("Invalid username or password.");
 %>
         <h3 style="color: red; text-align: center;">Invalid username or password.</h3>
         <p style="text-align: center;"><a href="login_form.jsp">Try Again</a></p>

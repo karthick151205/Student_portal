@@ -18,9 +18,9 @@ if(session.getAttribute("user_id") == null) {
     PreparedStatement pstmt = null;
 
     try {
-        String url = "jdbc:mysql://localhost:3306/student_report?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
-        String user = "root";      // your DB username
-        String password = "karthi"; // your DB password
+        String url = "jdbc:mysql://b5mkw3hz4pketjlxs9cp-mysql.services.clever-cloud.com:3306/b5mkw3hz4pketjlxs9cp";
+        String user = "ui60qawn0wknpbuj";      // your DB username
+        String password = "tg55JuZt1E9UayFF9Js7"; // your DB password
 
         Class.forName("com.mysql.cj.jdbc.Driver");
         conn = DriverManager.getConnection(url, user, password);

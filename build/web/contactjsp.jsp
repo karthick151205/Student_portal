@@ -19,7 +19,7 @@
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/student_report?useSSL=false", "root", "karthi");
+            conn = DriverManager.getConnection("jdbc:mysql://b5mkw3hz4pketjlxs9cp-mysql.services.clever-cloud.com:3306/b5mkw3hz4pketjlxs9cp", "ui60qawn0wknpbuj", "tg55JuZt1E9UayFF9Js7");
 
             String sql = "INSERT INTO contact_messages (name, email, message) VALUES (?, ?, ?)";
             stmt = conn.prepareStatement(sql);
